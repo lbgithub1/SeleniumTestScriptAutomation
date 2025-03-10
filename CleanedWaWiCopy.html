@@ -1,0 +1,3506 @@
+<p>Kein Titel gefunden.</p><p>Wirtschaftsinformatik Uni Trier</p>
+<html class="h-100" lang="de">
+<body class="d-flex flex-column h-100">
+<div class="logo mb-1 bg-header-1">
+    <div class="container">
+        <div class="d-sm-flex justify-content-between">
+            <div class="ps-2 pt-2 pb-2 text-center text-sm-start"><a href="https://wiwa.uni-trier.de/"><img
+                    src="https://wiwa.uni-trier.de/assets//images/WiWa-Logo.svg" width="175px"/></a></div>
+            <div class="mt-2 ms-3 me-3 pb-2 pt-sm-2 ms-sm-0 me-sm-0">
+                <form accept-charset="utf-8" action="https://wiwa.uni-trier.de/index.php/home/loop" id="loop"
+                      method="post" role="form">
+                    <div class="input-group border-0"><input class="form-control form-control-sm" id="loopsearchfield"
+                                                             name="loopsearchfield"
+                                                             placeholder="Suchstring (min 2 Zeichen)" type="text"/>
+                        <button class="btn btn-header-1 rounded-end" onclick="document.getElementById('loop').submit();"
+                                type="button"></button>
+                        <button aria-controls="Spickzettel"
+                                class="btn btn-link btn-header-1 rounded position-relative ms-2"
+                                data-bs-target="#Spickzettel" data-bs-toggle="offcanvas" id="btngetSpickzettel"
+                                onclick="getSpickzettel();" type="button"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-header-1 bg-header-2 px-0 py-0 pb-1" role="navigation">
+    <div class="container justify-content-start">
+        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler ms-2 ms-md-0 d-block d-md-none" data-bs-target="#navbarContent"
+                data-bs-toggle="collapse" type="button"><a class="nav-link ps-0 pe-0" href="#"></a></button>
+        <div class="collapse navbar-collapse ms-2 ms-md-0" id="navbarContent">
+            <ul class="navbar-nav me-auto ms-2 ms-md-0">
+                <li class="active"><a class="nav-link d-none d-md-block py-0 mt-1"
+                                      href="https://wiwa.uni-trier.de/login/goto/1/0"></a></li>
+                <li class="active"><a class="nav-link text-white py-0 mt-1"
+                                      href="https://wiwa.uni-trier.de/login/goto/1/0"></a></li>
+                <li class="active"><a class="nav-link text-white py-0 mt-1"
+                                      href="https://wiwa.uni-trier.de/home/tasks"></a></li>
+                <li class="active"><a class="nav-link text-white py-0 mt-1"
+                                      href="https://wiwa.uni-trier.de/personen/personen"></a></li>
+                <li class="nav-item dropdown active py-0 mt-1"><a aria-expanded="false"
+                                                                  class="nav-link dropdown-toggle text-white py-0"
+                                                                  data-bs-toggle="dropdown" href="#"
+                                                                  id="dropdownProdukte"></a>
+                    <ul aria-labelledby="dropdownProdukte" class="dropdown-menu me-3">
+                        <li class="active"><a class="dropdown-item"
+                                              href="https://wiwa.uni-trier.de/produkte/produkte"></a></li>
+                        <li class="active"><a class="dropdown-item"
+                                              href="https://wiwa.uni-trier.de/produkte/produktlinien"></a></li>
+                        <li class="active"><a class="dropdown-item" href="https://wiwa.uni-trier.de/gvf/verleih"></a>
+                        </li>
+                        <li class="active"><a class="dropdown-item" href="https://wiwa.uni-trier.de/produkte/lager"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown active py-0 mt-1"><a aria-expanded="false"
+                                                                  class="nav-link dropdown-toggle text-white py-0"
+                                                                  data-bs-toggle="dropdown" href="#"
+                                                                  id="dropdownGeschaeftsvorfaelle"></a>
+                    <ul aria-labelledby="dropdownGeschaeftsvorfaelle" class="dropdown-menu me-3">
+                        <li class="active"><a class="dropdown-item" href="https://wiwa.uni-trier.de/gvf/gvf/7/11"></a>
+                        </li>
+                        <li class="active"><a class="dropdown-item" href="https://wiwa.uni-trier.de/gvf/gvf/1/3"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown active py-0 mt-1"><a aria-expanded="false"
+                                                                  class="nav-link dropdown-toggle text-white py-0"
+                                                                  data-bs-toggle="dropdown" href="#"
+                                                                  id="dropdownProdukte"></a>
+                    <ul aria-labelledby="dropdownProdukte" class="dropdown-menu me-3">
+                        <li class="active"><a class="dropdown-item"
+                                              href="https://wiwa.uni-trier.de/versand/warenausgang"></a></li>
+                        <li class="active"><a class="dropdown-item"
+                                              href="https://wiwa.uni-trier.de/versand/wareneingang"></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown active py-0 mt-1"><a aria-expanded="false"
+                                                                  class="nav-link dropdown-toggle text-white py-0"
+                                                                  data-bs-toggle="dropdown" href="#"
+                                                                  id="dropdownExtras"></a>
+                    <ul aria-labelledby="dropdownExtras" class="dropdown-menu me-3">
+                        <li><a class="dropdown-item" href="https://wiwa.uni-trier.de/reports/reports"></a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="active"><a class="dropdown-item" href="https://wiwa.uni-trier.de/home/statistik"></a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="active"><a class="dropdown-item" href="https://wiwa.uni-trier.de/gvf/rabatte"></a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="active"><a class="dropdown-item" href="https://wiwa.uni-trier.de/zeit/zeiten"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right ms-2 ms-md-0 mt-1 mb-1">
+                <li class="nav-item dropdown active"><a aria-expanded="false"
+                                                        class="nav-link dropdown-toggle text-white py-0"
+                                                        data-bs-toggle="dropdown" href="#" id="navbarDropdown"></a>
+                    <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-right">
+                        <li class="dropdown-submenu dropdown-submenu-left"><a class="dropdown-item dropdown-toggle"
+                                                                              href="#"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/berechnungsgrundlagen"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/kalkulationsparameter/0"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu dropdown-submenu-left"><a class="dropdown-item dropdown-toggle"
+                                                                              href="#"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/hersteller/0"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/metriken/0"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/groessen/0"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/produktarten"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/produktgruppen"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/produkteinheiten"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/sicherheitsstufen"></a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/mwst/0"></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu dropdown-submenu-left"><a class="dropdown-item dropdown-toggle"
+                                                                              href="#"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/relationen"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/eigenschaften/0"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/datentypen"></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu dropdown-submenu-left"><a class="dropdown-item dropdown-toggle"
+                                                                              href="#"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/textbausteine"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/outbox"></a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/linkbereiche"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/links"></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu dropdown-submenu-left"><a class="dropdown-item dropdown-toggle"
+                                                                              href="#"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/boards"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/spalten"></a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://wiwa.uni-trier.de/admin/adminitems/taskarten"></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://wiwa.uni-trier.de/zeit/zeitkonten"></a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://wiwa.uni-trier.de/admin/adminitems/lager/0"></a></li>
+                        <li><a class="dropdown-item"
+                               href="https://wiwa.uni-trier.de/admin/adminitems/lagerplaetze/0"></a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item"
+                               href="https://wiwa.uni-trier.de/admin/adminitems/geschaeftsvorfaelle/0"></a></li>
+                        <li><a class="dropdown-item"
+                               href="https://wiwa.uni-trier.de/admin/adminitems/dokumentenarten/0"></a></li>
+                        <li><a class="dropdown-item" href="https://wiwa.uni-trier.de/admin/adminitems/adressarten"></a>
+                        </li>
+                        <li><a class="dropdown-item"
+                               href="https://wiwa.uni-trier.de/admin/adminitems/zahlungsarten"></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown active"><a aria-expanded="false"
+                                                        class="nav-link dropdown-toggle text-white py-0"
+                                                        data-bs-toggle="dropdown" href="#" id="dropdownProfil"></a>
+                    <ul aria-labelledby="dropdownProfil" class="dropdown-menu me-3">
+                        <li><a class="dropdown-item" href="https://wiwa.uni-trier.de/personen/person/17213/1"></a></li>
+                        <li><a class="dropdown-item" href="https://wiwa.uni-trier.de/login/logout"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container pb-4">
+    <div id="topAlert"></div>
+    <div class="card mt-4">
+        <legend class="card-header bg-white">
+            <div class="d-flex justify-content-between">
+                <div class="h3"></div>
+            </div>
+        </legend>
+        <div class="card-body">
+            <div class="bootstrap-table bootstrap5">
+                <div class="fixed-table-toolbar">
+                    <div class="bs-bars float-left">
+                        <div class="toolbar"><a href="https://wiwa.uni-trier.de/produkte/produkt/0/0/0/">
+                            <button class="btn btn-primary" id="btnNeu" name="btnNeu" type="button"></button>
+                        </a></div>
+                    </div>
+                    <div class="columns columns-right btn-group float-right">
+                        <button aria-label="" class="btn btn-secondary" name="toggle" title="" type="button"></button>
+                        <div class="keep-open btn-group">
+                            <button aria-label="Spalten" class="btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" title="Spalten" type="button"></button>
+                            <div class="dropdown-menu dropdown-menu-end"><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked" data-field="id"
+                                                                                      type="checkbox"
+                                                                                      value="0"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="zuloeschen"
+                                                                                      type="checkbox"
+                                                                                      value="1"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="produkt"
+                                                                                      type="checkbox"
+                                                                                      value="2"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="seriennummer"
+                                                                                      type="checkbox"
+                                                                                      value="3"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="produktgruppe"
+                                                                                      type="checkbox"
+                                                                                      value="4"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="produktart"
+                                                                                      type="checkbox"
+                                                                                      value="5"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="lager" type="checkbox"
+                                                                                      value="6"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="bestand"
+                                                                                      type="checkbox"
+                                                                                      value="7"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="erfassungsdatum"
+                                                                                      type="checkbox"
+                                                                                      value="8"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="ekpreis"
+                                                                                      type="checkbox"
+                                                                                      value="9"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="vkpreis"
+                                                                                      type="checkbox"
+                                                                                      value="10"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="marge" type="checkbox"
+                                                                                      value="11"/></label><label
+                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                      data-field="aktion"
+                                                                                      type="checkbox"
+                                                                                      value="12"/></label></div>
+                        </div>
+                        <div class="export btn-group">
+                            <button aria-label="Export data" class="btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" title="Export data" type="button"></button>
+                            <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" data-type="csv"
+                                                                            href="#"></a><a class="dropdown-item"
+                                                                                            data-type="txt"
+                                                                                            href="#"></a><a
+                                    class="dropdown-item" data-type="excel" href="#"></a></div>
+                        </div>
+                        <button aria-expanded="false" class="btn btn-secondary" data-bs-auto-close="outside"
+                                data-bs-toggle="dropdown" title="" type="button"></button>
+                        <div class="dropdown-menu">
+                            <div class="container-fluid">
+                                <form action="https://wiwa.uni-trier.de//admin/setzefilter" id="filterform"
+                                      method="post">
+                                    <div class="d-md-flex justify-content-between">
+                                        <div class="ms-2 me-2"><p class="dropdown-item mb-0"></p>
+                                            <div><label class="dropdown-item dropdown-item-marker"><input
+                                                    checked="checked" data-field="idhersteller0" name="hersteller"
+                                                    type="radio" value="0"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idhersteller9" name="hersteller" type="radio"
+                                                    value="9"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idhersteller3" name="hersteller" type="radio"
+                                                    value="3"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idhersteller15" name="hersteller" type="radio"
+                                                    value="15"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idhersteller14" name="hersteller" type="radio"
+                                                    value="14"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idhersteller2" name="hersteller" type="radio"
+                                                    value="2"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idhersteller1" name="hersteller" type="radio"
+                                                    value="1"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idhersteller16" name="hersteller" type="radio"
+                                                    value="16"/></label></div>
+                                            <div><label class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idhersteller4" name="hersteller" type="radio"
+                                                    value="4"/></label></div>
+                                            <div class="ps-3">
+                                                <button class="btn btn-primary mt-3 w-100" type="submit"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <button aria-expanded="false" class="btn btn-secondary" data-bs-auto-close="outside"
+                                data-bs-toggle="dropdown" title="" type="button"></button>
+                        <div class="dropdown-menu">
+                            <div class="container-fluid">
+                                <form action="https://wiwa.uni-trier.de//admin/setzefilter" id="filterform"
+                                      method="post">
+                                    <div class="d-md-flex justify-content-between">
+                                        <div class="ms-2 me-2"><p class="dropdown-item mb-0"></p>
+                                            <div><label class="dropdown-item dropdown-item-marker"><input
+                                                    checked="checked" data-field="idproduktlinie0" name="produktlinie"
+                                                    type="radio" value="0"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input checked="checked"
+                                                                                                      data-field="idproduktlinie0"
+                                                                                                      name="produktlinie"
+                                                                                                      type="radio"
+                                                                                                      value="0"/></label>
+                                            </div>
+                                            <div class="ps-3">
+                                                <button class="btn btn-primary mt-3 w-100" type="submit"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <button aria-expanded="false" class="btn btn-secondary rounded-end" data-bs-auto-close="outside"
+                                data-bs-toggle="dropdown" title="" type="button"></button>
+                        <div class="dropdown-menu">
+                            <div class="container-fluid">
+                                <form action="https://wiwa.uni-trier.de//admin/setzefilter" id="filterform"
+                                      method="post">
+                                    <div class="d-md-flex justify-content-between">
+                                        <div class="ms-2 me-2"><p class="dropdown-item mb-0"></p>
+                                            <div><label class="dropdown-item dropdown-item-marker"><input
+                                                    checked="checked" data-field="idproduktgruppe0" name="produktgruppe"
+                                                    type="radio" value="0"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe4" name="produktgruppe" type="radio"
+                                                    value="4"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe5" name="produktgruppe" type="radio"
+                                                    value="5"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe11" name="produktgruppe" type="radio"
+                                                    value="11"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe10" name="produktgruppe" type="radio"
+                                                    value="10"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe14" name="produktgruppe" type="radio"
+                                                    value="14"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe3" name="produktgruppe" type="radio"
+                                                    value="3"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe2" name="produktgruppe" type="radio"
+                                                    value="2"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe12" name="produktgruppe" type="radio"
+                                                    value="12"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe6" name="produktgruppe" type="radio"
+                                                    value="6"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe1" name="produktgruppe" type="radio"
+                                                    value="1"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe9" name="produktgruppe" type="radio"
+                                                    value="9"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe8" name="produktgruppe" type="radio"
+                                                    value="8"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe13" name="produktgruppe" type="radio"
+                                                    value="13"/></label></div>
+                                            <div><label class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktgruppe7" name="produktgruppe" type="radio"
+                                                    value="7"/></label></div>
+                                        </div>
+                                        <div class="ms-2 me-2"><p class="dropdown-item mb-0"></p>
+                                            <div><label class="dropdown-item dropdown-item-marker"><input
+                                                    checked="checked" data-field="idproduktart0" name="produktart"
+                                                    type="radio" value="0"/></label><label
+                                                    class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktart1" name="produktart" type="radio"
+                                                    value="1"/></label></div>
+                                            <div><label class="dropdown-item dropdown-item-marker"><input
+                                                    data-field="idproduktart2" name="produktart" type="radio"
+                                                    value="2"/></label></div>
+                                        </div>
+                                        <div class="ms-2 me-2"><p class="dropdown-item mb-0"></p>
+                                            <div class="ps-3">
+                                                <button class="btn btn-primary mt-3 w-100" type="submit"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-right search btn-group"><input aria-label="Suchen" autocomplete="off"
+                                                                     class="form-control search-input"
+                                                                     placeholder="Suchen" type="search"/></div>
+                </div>
+                <div class="fixed-table-container" style="padding-bottom: 0px;">
+                    <div class="fixed-table-header" style="display: none;">
+                        <table></table>
+                    </div>
+                    <div class="fixed-table-body">
+                        <div class="fixed-table-loading table table-bordered table-hover" style="top: 50px;"></div>
+                        <table class="table table-responsive table-striped table-hover table-borderless table-bordered"
+                               data-ajax="getTableDataImproved" data-buttons="addFilterButton"
+                               data-buttons-order="['toggle', 'columns', 'export', 'filter']" data-check-on-init="true"
+                               data-cookie="true" data-cookie-id-table="savetblprodukte" data-custom-sort="customSort"
+                               data-export-data-type="all" data-export-types="['csv', 'txt', 'excel']"
+                               data-footer-style="footerStyle" data-icons="icons" data-icons-prefix="fa"
+                               data-mobile-responsive="true" data-search="true" data-searchable="true"
+                               data-server-sort="true" data-show-columns="true" data-show-export="true"
+                               data-show-footer="true" data-show-toggle="true" data-side-pagination="server"
+                               data-sort-stable="true" data-toggle="table" data-toolbar=".toolbar" data-unique-id="id"
+                               id="tblprodukte">
+                            <thead>
+                            <tr>
+                                <th data-field="id">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th data-field="zuloeschen">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th data-field="produkt">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th data-field="seriennummer">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th data-field="produktgruppe">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th data-field="produktart">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th data-field="lager">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th class="text-end" data-field="bestand">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th class="text-end" data-field="erfassungsdatum">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th class="text-end" data-field="ekpreis">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th class="text-end" data-field="vkpreis">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th class="text-end" data-field="marge">
+                                    <div class="th-inner sortable both"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                                <th class="text-end" data-field="aktion">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell"></div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr data-index="0" data-uniqueid="29">
+                                <td></td>
+                                <td><input class="form-check-input" id="flexCheckDefault" onclick="setZuLoeschen(29,0)"
+                                           type="checkbox" value=""/><label class="form-check-label"
+                                                                            for="flexCheckDefault"></label></td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/produkt/29/1/0"></a></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="d-sm-flex justify-content-between" style="white-space: nowrap;"></div>
+                                </td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/lager/Ohne Lager"></a></td>
+                                <td class="text-end"><a
+                                        href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/29/0"></a></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end">
+                                    <div class="dropdown position-static"><a aria-expanded="false" aria-haspopup="true"
+                                                                             class="btn btn-link"
+                                                                             data-bs-toggle="dropdown"
+                                                                             role="button"></a>
+                                        <div class="dropdown-menu scrollable-menu">
+                                            <li class="list-group-item"><p class="dropdown-item mb-0"></p></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnQuickView"
+                                                   onclick="viewDetails('produkt', 29)"></a></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnSetSpickzettel"
+                                                   onclick="setSpickzettel('produkt', 29)"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/createProduktPDF/29"
+                                                   id="btnCreatePdf"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/29/3/0"
+                                                   id="btnCopy"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/29/1/0"
+                                                   id="btnBearbeiten"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/29/2/0"
+                                                   id="btnLoeschen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/29/0"
+                                                   id="btnBestandaenderungen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//gvf/verleih/29"
+                                                   id="btnKalender"></a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-index="1" data-uniqueid="26">
+                                <td></td>
+                                <td><input class="form-check-input" id="flexCheckDefault" onclick="setZuLoeschen(26,0)"
+                                           type="checkbox" value=""/><label class="form-check-label"
+                                                                            for="flexCheckDefault"></label></td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/produkt/26/1/0"></a></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="d-sm-flex justify-content-between" style="white-space: nowrap;"></div>
+                                </td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/lager/Anlieferung"></a></td>
+                                <td class="text-end"><a
+                                        href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/26/0"></a></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end">
+                                    <div class="dropdown position-static"><a aria-expanded="false" aria-haspopup="true"
+                                                                             class="btn btn-link"
+                                                                             data-bs-toggle="dropdown"
+                                                                             role="button"></a>
+                                        <div class="dropdown-menu scrollable-menu">
+                                            <li class="list-group-item"><p class="dropdown-item mb-0"></p></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnQuickView"
+                                                   onclick="viewDetails('produkt', 26)"></a></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnSetSpickzettel"
+                                                   onclick="setSpickzettel('produkt', 26)"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/createProduktPDF/26"
+                                                   id="btnCreatePdf"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/26/3/0"
+                                                   id="btnCopy"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/26/1/0"
+                                                   id="btnBearbeiten"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/26/2/0"
+                                                   id="btnLoeschen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/26/0"
+                                                   id="btnBestandaenderungen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//gvf/verleih/26"
+                                                   id="btnKalender"></a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-index="2" data-uniqueid="24">
+                                <td></td>
+                                <td><input class="form-check-input" id="flexCheckDefault" onclick="setZuLoeschen(24,0)"
+                                           type="checkbox" value=""/><label class="form-check-label"
+                                                                            for="flexCheckDefault"></label></td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/produkt/24/1/0"></a></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="d-sm-flex justify-content-between" style="white-space: nowrap;"></div>
+                                </td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/lager/Anlieferung"></a></td>
+                                <td class="text-end"><a
+                                        href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/24/0"></a></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end">
+                                    <div class="dropdown position-static"><a aria-expanded="false" aria-haspopup="true"
+                                                                             class="btn btn-link"
+                                                                             data-bs-toggle="dropdown"
+                                                                             role="button"></a>
+                                        <div class="dropdown-menu scrollable-menu">
+                                            <li class="list-group-item"><p class="dropdown-item mb-0"></p></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnQuickView"
+                                                   onclick="viewDetails('produkt', 24)"></a></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnSetSpickzettel"
+                                                   onclick="setSpickzettel('produkt', 24)"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/createProduktPDF/24"
+                                                   id="btnCreatePdf"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/24/3/0"
+                                                   id="btnCopy"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/24/1/0"
+                                                   id="btnBearbeiten"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/24/2/0"
+                                                   id="btnLoeschen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/24/0"
+                                                   id="btnBestandaenderungen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//gvf/verleih/24"
+                                                   id="btnKalender"></a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-index="3" data-uniqueid="25">
+                                <td></td>
+                                <td><input class="form-check-input" id="flexCheckDefault" onclick="setZuLoeschen(25,0)"
+                                           type="checkbox" value=""/><label class="form-check-label"
+                                                                            for="flexCheckDefault"></label></td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/produkt/25/1/0"></a></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="d-sm-flex justify-content-between" style="white-space: nowrap;"></div>
+                                </td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/lager/Anlieferung"></a></td>
+                                <td class="text-end"><a
+                                        href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/25/0"></a></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end">
+                                    <div class="dropdown position-static"><a aria-expanded="false" aria-haspopup="true"
+                                                                             class="btn btn-link"
+                                                                             data-bs-toggle="dropdown"
+                                                                             role="button"></a>
+                                        <div class="dropdown-menu scrollable-menu">
+                                            <li class="list-group-item"><p class="dropdown-item mb-0"></p></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnQuickView"
+                                                   onclick="viewDetails('produkt', 25)"></a></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnSetSpickzettel"
+                                                   onclick="setSpickzettel('produkt', 25)"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/createProduktPDF/25"
+                                                   id="btnCreatePdf"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/25/3/0"
+                                                   id="btnCopy"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/25/1/0"
+                                                   id="btnBearbeiten"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/25/2/0"
+                                                   id="btnLoeschen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/25/0"
+                                                   id="btnBestandaenderungen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//gvf/verleih/25"
+                                                   id="btnKalender"></a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-index="4" data-uniqueid="112">
+                                <td></td>
+                                <td><input class="form-check-input" id="flexCheckDefault" onclick="setZuLoeschen(112,0)"
+                                           type="checkbox" value=""/><label class="form-check-label"
+                                                                            for="flexCheckDefault"></label></td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/produkt/112/1/0"></a></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="d-sm-flex justify-content-between" style="white-space: nowrap;"></div>
+                                </td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/lager/Anlieferung"></a></td>
+                                <td class="text-end"><a
+                                        href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/112/0"></a></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end">
+                                    <div class="dropdown position-static"><a aria-expanded="false" aria-haspopup="true"
+                                                                             class="btn btn-link"
+                                                                             data-bs-toggle="dropdown"
+                                                                             role="button"></a>
+                                        <div class="dropdown-menu scrollable-menu">
+                                            <li class="list-group-item"><p class="dropdown-item mb-0"></p></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnQuickView"
+                                                   onclick="viewDetails('produkt', 112)"></a></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnSetSpickzettel"
+                                                   onclick="setSpickzettel('produkt', 112)"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/createProduktPDF/112"
+                                                   id="btnCreatePdf"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/112/3/0"
+                                                   id="btnCopy"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/112/1/0"
+                                                   id="btnBearbeiten"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/112/2/0"
+                                                   id="btnLoeschen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/112/0"
+                                                   id="btnBestandaenderungen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//gvf/verleih/112"
+                                                   id="btnKalender"></a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-index="5" data-uniqueid="22">
+                                <td></td>
+                                <td><input class="form-check-input" id="flexCheckDefault" onclick="setZuLoeschen(22,0)"
+                                           type="checkbox" value=""/><label class="form-check-label"
+                                                                            for="flexCheckDefault"></label></td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/produkt/22/1/0"></a></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="d-sm-flex justify-content-between" style="white-space: nowrap;"></div>
+                                </td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/lager/Auslieferung"></a></td>
+                                <td class="text-end"><a
+                                        href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/22/0"></a></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end">
+                                    <div class="dropdown position-static"><a aria-expanded="false" aria-haspopup="true"
+                                                                             class="btn btn-link"
+                                                                             data-bs-toggle="dropdown"
+                                                                             role="button"></a>
+                                        <div class="dropdown-menu scrollable-menu">
+                                            <li class="list-group-item"><p class="dropdown-item mb-0"></p></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnQuickView"
+                                                   onclick="viewDetails('produkt', 22)"></a></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnSetSpickzettel"
+                                                   onclick="setSpickzettel('produkt', 22)"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/createProduktPDF/22"
+                                                   id="btnCreatePdf"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/22/3/0"
+                                                   id="btnCopy"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/22/1/0"
+                                                   id="btnBearbeiten"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/22/2/0"
+                                                   id="btnLoeschen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/22/0"
+                                                   id="btnBestandaenderungen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//gvf/verleih/22"
+                                                   id="btnKalender"></a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-index="6" data-uniqueid="27">
+                                <td></td>
+                                <td><input class="form-check-input" id="flexCheckDefault" onclick="setZuLoeschen(27,0)"
+                                           type="checkbox" value=""/><label class="form-check-label"
+                                                                            for="flexCheckDefault"></label></td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/produkt/27/1/0"></a></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="d-sm-flex justify-content-between" style="white-space: nowrap;"></div>
+                                </td>
+                                <td><a href="https://wiwa.uni-trier.de//produkte/lager/BO Regal A"></a></td>
+                                <td class="text-end"><a
+                                        href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/27/0"></a></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"></td>
+                                <td class="text-end">
+                                    <div class="dropdown position-static"><a aria-expanded="false" aria-haspopup="true"
+                                                                             class="btn btn-link"
+                                                                             data-bs-toggle="dropdown"
+                                                                             role="button"></a>
+                                        <div class="dropdown-menu scrollable-menu">
+                                            <li class="list-group-item"><p class="dropdown-item mb-0"></p></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnQuickView"
+                                                   onclick="viewDetails('produkt', 27)"></a></li>
+                                            <li><a class="dropdown-item" href="#!" id="btnSetSpickzettel"
+                                                   onclick="setSpickzettel('produkt', 27)"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/createProduktPDF/27"
+                                                   id="btnCreatePdf"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/27/3/0"
+                                                   id="btnCopy"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/27/1/0"
+                                                   id="btnBearbeiten"></a></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/Produkt/27/2/0"
+                                                   id="btnLoeschen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//produkte/bestandsaenderungen/27/0"
+                                                   id="btnBestandaenderungen"></a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                   href="https://wiwa.uni-trier.de//gvf/verleih/27"
+                                                   id="btnKalender"></a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                            <tfoot style="margin-right: 0px;">
+                            <tr>
+                                <th>
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 65.4375px;"></div>
+                                </th>
+                                <th>
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 38px;"></div>
+                                </th>
+                                <th>
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 111.172px;"></div>
+                                </th>
+                                <th>
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 134.891px;"></div>
+                                </th>
+                                <th>
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 103.344px;"></div>
+                                </th>
+                                <th>
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 168.984px;"></div>
+                                </th>
+                                <th>
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 104.75px;"></div>
+                                </th>
+                                <th class="text-end">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 102.375px;"></div>
+                                </th>
+                                <th class="text-end">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 92.3281px;"></div>
+                                </th>
+                                <th class="text-end">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 136.266px;"></div>
+                                </th>
+                                <th class="text-end">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 143.484px;"></div>
+                                </th>
+                                <th class="text-end">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 90.7969px;"></div>
+                                </th>
+                                <th class="text-end">
+                                    <div class="th-inner"></div>
+                                    <div class="fht-cell" style="width: 74.3438px;"></div>
+                                </th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="fixed-table-footer"></div>
+                </div>
+                <div class="fixed-table-pagination" style="display: none;"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div aria-labelledby="SpickzettelLabel" class="offcanvas offcanvas-start" id="Spickzettel" tabindex="-1"></div>
+<div aria-labelledby="SprachsteuerungguiLabel" class="offcanvas offcanvas-bottom" data-bs-backdrop="false"
+     data-bs-scroll="true" id="Sprachsteuerunggui" tabindex="-1"></div>
+<div id="toolbarContainer">
+    <div class="debug-bar-dinlineBlock" id="debug-icon"><a id="debug-icon-link"></a></div>
+    <div class="debug-bar-ndisplay" id="debug-bar">
+        <div class="toolbar"><h1></h1><a id="debug-bar-link" role="button" title="Open/Close"><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEPSURBVEhL7ZVLDoJAEEThRuoGDwSEG+jCuFU34s3AK3APP1VDDSGMqI1xx0s6M/2rnlHEaMZElmWrPM+vsDvsYbQ7+us0TReSC2EBrEHxCevRYuppYLXkQpC8sVCuGfTvqSE3hFdFwUGuGfRvqSE35NUAfKZrbQNQm2jrMA+gOK+M+FmhDsRL5voHMA8gFGecq0JOXLWlQg7E7AMIxZnjOiZOEJ82gFCcedUE4gS56QP8yf8ywItz7e+RituKlkkDBoIOH4Nd4HZD4NsGYJ/Abn1xEVOcuZ8f0zc/tHiYmzTAwscBvDIK/veyQ9K/rnewjdF26q0kF1IUxZIFPAVW98x/a+qp8L2M/+HMhETRE6S8TxpZ7KGXAAAAAElFTkSuQmCC"/></a>
+        </div>
+        <div class="tab" id="ci-timeline">
+            <table class="timeline">
+                <thead>
+                <tr>
+                    <th class="debug-bar-width30"></th>
+                    <th class="debug-bar-width10"></th>
+                    <th class="debug-bar-width10"></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="timeline-parent" data-child="timeline-0" data-toggle="childrows" id="timeline-0_parent">
+                    <td class="debug-bar-level-0">
+                        <nav></nav>
+                    </td>
+                    <td class=""></td>
+                    <td class="debug-bar-alignRight"></td>
+                    <td class="debug-bar-noverflow" colspan="6"></td>
+                </tr>
+                <tr class="child-row debug-bar-ndisplay" id="timeline-0_children">
+                    <td class="child-container" colspan="9">
+                        <table class="timeline">
+                            <tbody>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="debug-bar-level-0"></td>
+                    <td class=""></td>
+                    <td class="debug-bar-alignRight"></td>
+                    <td class="debug-bar-noverflow" colspan="6"></td>
+                </tr>
+                <tr>
+                    <td class="debug-bar-level-0"></td>
+                    <td class=""></td>
+                    <td class="debug-bar-alignRight"></td>
+                    <td class="debug-bar-noverflow" colspan="6"></td>
+                </tr>
+                <tr>
+                    <td class="debug-bar-level-0"></td>
+                    <td class=""></td>
+                    <td class="debug-bar-alignRight"></td>
+                    <td class="debug-bar-noverflow" colspan="6"></td>
+                </tr>
+                <tr class="timeline-parent timeline-parent-open" data-child="timeline-5" data-toggle="childrows"
+                    id="timeline-5_parent">
+                    <td class="debug-bar-level-0">
+                        <nav></nav>
+                    </td>
+                    <td class=""></td>
+                    <td class="debug-bar-alignRight"></td>
+                    <td class="debug-bar-noverflow" colspan="6"></td>
+                </tr>
+                <tr class="child-row" id="timeline-5_children">
+                    <td class="child-container" colspan="9">
+                        <table class="timeline">
+                            <tbody>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-8" data-toggle="childrows"
+                                id="timeline-8_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-8_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-10" data-toggle="childrows"
+                                id="timeline-10_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-10_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-12" data-toggle="childrows"
+                                id="timeline-12_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-12_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-14" data-toggle="childrows"
+                                id="timeline-14_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-14_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-16" data-toggle="childrows"
+                                id="timeline-16_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-16_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-18" data-toggle="childrows"
+                                id="timeline-18_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-18_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-20" data-toggle="childrows"
+                                id="timeline-20_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-20_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-22" data-toggle="childrows"
+                                id="timeline-22_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-22_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-24" data-toggle="childrows"
+                                id="timeline-24_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-24_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="query-container debug-bar-level-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="timeline-parent" data-child="timeline-26" data-toggle="childrows"
+                                id="timeline-26_parent">
+                                <td class="debug-bar-width30 debug-bar-level-1">
+                                    <nav></nav>
+                                </td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr class="child-row debug-bar-ndisplay" id="timeline-26_children">
+                                <td class="child-container" colspan="9">
+                                    <table class="timeline">
+                                        <tbody>
+                                        <tr>
+                                            <td class="debug-bar-width30 debug-bar-level-2"></td>
+                                            <td class="debug-bar-width10"></td>
+                                            <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                            <td class="debug-bar-noverflow" colspan="6"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="debug-bar-width30 debug-bar-level-1"></td>
+                                <td class="debug-bar-width10"></td>
+                                <td class="debug-bar-width10 debug-bar-alignRight"></td>
+                                <td class="debug-bar-noverflow" colspan="6"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="debug-bar-level-0"></td>
+                    <td class=""></td>
+                    <td class="debug-bar-alignRight"></td>
+                    <td class="debug-bar-noverflow" colspan="6"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab" id="ci-database"><h2></h2>
+            <table>
+                <thead>
+                <tr>
+                    <th class="debug-bar-width6r"></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="" data-toggle="d02a505495bfd83af2776b504b4f4f00-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="d02a505495bfd83af2776b504b4f4f00-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="" data-toggle="68fca4f4aba8ca601651fcd4ed1d3541-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="68fca4f4aba8ca601651fcd4ed1d3541-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="" data-toggle="95ffae0234f1700c74e1fcd964848092-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="95ffae0234f1700c74e1fcd964848092-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="" data-toggle="ae98b5e3481cc8f041daf7ac6feab684-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="ae98b5e3481cc8f041daf7ac6feab684-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="" data-toggle="e8f19923a3b078736cb7354521d7d4d7-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="e8f19923a3b078736cb7354521d7d4d7-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="" data-toggle="9012d8ee3b887f5dbd489dfec6c12363-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="9012d8ee3b887f5dbd489dfec6c12363-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="" data-toggle="6f184126bb8f6ce28848a4532d4a7ddd-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="6f184126bb8f6ce28848a4532d4a7ddd-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="" data-toggle="ce2312fda162df1a9cc3bc67637f76a5-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="ce2312fda162df1a9cc3bc67637f76a5-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="" data-toggle="2e1b0d19223d09457bdd9303cf4189e8-trace" title="">
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td class="debug-bar-alignRight"></td>
+                </tr>
+                <tr class="muted debug-bar-ndisplay" id="2e1b0d19223d09457bdd9303cf4189e8-trace">
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab" id="ci-logs"><h2></h2>
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab" id="ci-files"><h2></h2>
+            <table>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                <tr class="muted">
+                    <td class="debug-bar-width20e"></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab" id="ci-routes"><h2></h2>
+            <h3></h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="route-params-item">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="route-params-item">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="route-params-item">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="route-params-item">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="route-params-item">
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <h3></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET" title="https://wiwa.uni-trier.de/"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="login/goto/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/login/index"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/login/logout"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="login/lbs/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="login/loginbysecret/?"><input placeholder="$1"
+                                                                                     type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/login/register"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/login/registerkunde"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="login/register/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="login/changelanguage/?"><input placeholder="$1"
+                                                                                      type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/login/forgetpassword"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="login/setpassword/?/(.*)"><input placeholder="$1"
+                                                                                        type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="login/verifybylink/?/(.*)"><input placeholder="$1"
+                                                                                         type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/backto"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET" title="https://wiwa.uni-trier.de/goto"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/wartungsmodus"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/loginuser"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/loginuser/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/loginuser/?/edit"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/loginuser/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/aboproduktlinien"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/aboproduktlinien/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/aboproduktlinien/?/edit"><input placeholder="$1"
+                                                                                           type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/aboproduktlinien/?"><input placeholder="$1"
+                                                                                      type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/aboprodukte"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/aboprodukte/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/aboprodukte/?/edit"><input placeholder="$1"
+                                                                                      type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/aboprodukte/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/register"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/register/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/register/?/edit"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/register/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/produktlinie"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/produktlinie/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/produktlinie/?/edit"><input placeholder="$1"
+                                                                                       type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/produktlinie/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/datum"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/datum/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/datum/?/edit"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/datum/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/document"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/document/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/document/?/edit"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/document/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/view"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/view/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/view/?/edit"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/view/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/tasks"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="debug-bar-pointer" data-debugbar-route="GET"
+                        title="https://wiwa.uni-trier.de/api/tasks/new"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/tasks/?/edit"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="GET">
+                        <div></div>
+                        <form data-debugbar-route-tpl="api/tasks/?"><input placeholder="$1" type="text"/><input
+                                class="debug-bar-mleft4" type="submit" value="Go"/></form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="POST"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PATCH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="PUT"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td data-debugbar-route="DELETE"></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab" id="ci-events"><h2></h2>
+            <table>
+                <thead>
+                <tr>
+                    <th class="debug-bar-width6r"></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="narrow"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab" id="ci-history"><h2></h2>
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="current" data-active="1">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736267328.928280"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736267323.294643"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736267323.096559"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736267322.888741"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736267303.868913"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266905.690504"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266905.346993"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266900.588634"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266900.367406"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266900.160164"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266880.992764"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266374.803032"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266355.695552"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266355.481267"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266355.255899"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266336.884800"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736266022.646438"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736264886.311482"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736264886.090793"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-active="">
+                    <td class="debug-bar-width70p">
+                        <button class="ci-history-load" data-time="1736264885.878419"></button>
+                    </td>
+                    <td class="debug-bar-width190p"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab" id="ci-vars"><a class="debug-bar-vars" data-table="view-data" data-toggle="datatable"><h2></h2>
+        </a>
+            <table id="view-data_table">
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="kint-rich"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="kint-rich"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="kint-rich"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="kint-rich"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="kint-rich"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="kint-rich"></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <a class="debug-bar-vars" data-table="session" data-toggle="datatable"><h2></h2></a>
+            <table id="session_table">
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <pre></pre>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <h2></h2><a class="debug-bar-vars" data-table="request_headers" data-toggle="datatable"><h3></h3></a>
+            <table id="request_headers_table">
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <a class="debug-bar-vars" data-table="cookie" data-toggle="datatable"><h3></h3></a>
+            <table id="cookie_table">
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <h2></h2><a class="debug-bar-vars" data-table="response_headers" data-toggle="datatable"><h3></h3></a>
+            <table id="response_headers_table">
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab" id="ci-config"><h2></h2>
+            <p class="debug-bar-alignRight"><a href="https://codeigniter.com/user_guide/" target="_blank"></a></p>
+            <table>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
