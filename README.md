@@ -1,12 +1,15 @@
 # SeleniumTestScriptAutomation
 
-## Installation
+## Installation:
 pip install -r requirements.txt
 
 
 
-To start the application:
+## To Start the Application:
 streamlit run webUIStreamlitTesting.py
 
-Key files: - HtmlPreprocesser - OpenAIChatVersion8OpenRouter - webUIStreamlitTesting
+##Key files:
+- HtmlPreprocesser
+- OpenAIChatVersion8OpenRouter
+- webUIStreamlitTesting
 
