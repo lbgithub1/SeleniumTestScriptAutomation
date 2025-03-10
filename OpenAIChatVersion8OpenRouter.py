@@ -6,36 +6,14 @@ from Prepocessor_2 import deleteEmptyTables, compactHtml
 from IMPORTANTSeleniumTesting5AnmeldungWiWa import anmeldungWiWa, htmlCodeHelper
 from TestskriptVorlageInPromptUser1 import testSkriptVorlageVar1
 from TestskriptvorlageInPromptFinal2 import testSkriptVorlageVar2
-from TestskriptVorlageInPromptPlaceholder3 import testSkriptVorlagePlaceholderVersion3
 
-from GeneratedTestscriptsByGPT.YMTestfallbeschreibungWiWaAnmeldung import \
-    testfallbeschreibungVar as tv
-from GeneratedTestscriptsByGPT.YTestfallbeschreibungNavigationZurStartseiteVonPÜ import testfallbeschreibungVar as tvPÜ
-from GeneratedTestscriptsByGPT.YTestfallbeschreibungVonPÜZuEinkäufe import testfallbeschreibungVar as tvPÜEK
-from GeneratedTestscriptsByGPT.YTestfallbeschreibungWiWaReportsBestände import testfallbeschreibungVar as tvReBe
-from GeneratedTestscriptsByGPT.YTestfallbeschreibungWiWaAllgSuche import testfallbeschreibungVar as tvAS
-from GeneratedTestscriptsByGPT.XTestfallbeschreibungWiWaAllgSuche2PagesProductSelection import \
-    testfallbeschreibungVar as tvAsPs
-from GeneratedTestscriptsByGPT.YTestfallbeschreibungProduktsuchePÜ import testfallbeschreibungVar as tvPüS
-from GeneratedTestscriptsByGPT.XTestfallbeschreibungProduktsucheEigenschaftenÄndernSpeichern import \
-    testfallbeschreibungVar as tvPsAeS
-from GeneratedTestscriptsByGPT.XTestfallbeschreibungWiWaEinstellungeHerstellerAnlegen import \
-    testfallbeschreibungVar as tvEHa
-from GeneratedTestscriptsByGPT.CreatedTestcasedescriptions.TestfallbeschreibungPrompt4WiWa2Filterfunktion import \
-    testfallbeschreibungVar as tvFilterAnwenden
-from GeneratedTestscriptsByGPT.YTestfallbeschreibungProduktAnordnungÄndern import \
-    testfallbeschreibungVar as PAAE
-from GeneratedTestscriptsByGPT.YTestfallbeschreibungTabellenLayoutAendern import \
-    testfallbeschreibungVar as TLA
-from GeneratedTestscriptsByGPT.YMTestfallbeschreibungProduktLoeschen import \
-    testfallbeschreibungVar as TPL
-from GeneratedTestscriptsByGPT.YMTestfallbeschreibungProduktlinieLoeschen import \
-    testfallbeschreibungVar as TPLL
-from GeneratedTestscriptsByGPT.YTestfallbeschreibungImpressum import \
-    testfallbeschreibungVar as TFI
 
-import TestfallbeschreibungPrompt3WiWa1Produktsuche, TestfallbeschreibungPrompt4WiWa2Filterfunktion, \
-    TestfallbeschreibungPrompt_FB
+#from GeneratedTestscriptsByGPT.YMTestfallbeschreibungWiWaAnmeldung import \
+ #   testfallbeschreibungVar as tv
+
+
+#import TestfallbeschreibungPrompt3WiWa1Produktsuche, TestfallbeschreibungPrompt4WiWa2Filterfunktion, \
+  #  TestfallbeschreibungPrompt_FB
 from langchain.prompts import SystemMessagePromptTemplate, HumanMessagePromptTemplate
 
 print(openai.__version__)
