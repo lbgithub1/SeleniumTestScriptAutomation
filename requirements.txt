@@ -1,1 +1,7 @@
-
+streamlit
+pandas
+altair
+selenium
+openai
+requests
+beautifulsoup4
