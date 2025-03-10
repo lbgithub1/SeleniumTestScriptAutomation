@@ -5,3 +5,6 @@ selenium
 openai
 requests
 beautifulsoup4
+tiktoken
+dotenv
+langchain
